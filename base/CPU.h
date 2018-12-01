@@ -14,8 +14,8 @@ struct Task
 
 struct Statistics
 {
-	int taskSl;
 	int taskN;
+	int taskSl;
 	int taskR;
 	double taskRCPU() { return ((double)taskR / (double)taskN); }
 	double taskSlCPU() { return ((double)taskSl / (double)taskN); }
@@ -32,3 +32,5 @@ public:
 };
 
 #endif
+
+//gg
