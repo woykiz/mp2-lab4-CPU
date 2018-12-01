@@ -1,4 +1,4 @@
-﻿#ifndef __CPU_H__
+#ifndef __CPU_H__
 #define __CPU_H__
 
 #include "queue.h"
@@ -14,8 +14,9 @@ struct Task
 
 struct Statistics
 {
-	int taskN;
+
 	int taskSl;
+	int taskN;
 	int taskR;
 	double taskRCPU() { return ((double)taskR / (double)taskN); }
 	double taskSlCPU() { return ((double)taskSl / (double)taskN); }
@@ -30,6 +31,5 @@ public:
 	TCPU(int queueSize, int coreNums) : queue(queueSize), corsN(coreNums) {}
 	Statistics Run(double q1, double q2, int time);
 };
-
 #endif
 
